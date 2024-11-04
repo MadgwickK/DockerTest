@@ -6,6 +6,6 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY dist_calc.py
+COPY dist_calc.py .
 
 CMD ["bash"]
