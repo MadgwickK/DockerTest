@@ -45,7 +45,13 @@ def distcalc(z,omega_m=0.28,omega_lambda=0.72,omega_k=0,H0 = 75e3):
 
     return DM
 
-zinput = 2.5
-zdist = distcalc(zinput)
+def main():
+    zinput = float(sys.argv[1])
+    zdist = distcalc(zinput)
+    print(f"Calculating distance for z = {zdist}")
+    print(f"The distance to an object of redshift {zinput:.2f} is {zdist:.2f} Megaparsecs.")
 
-print(f"The distance to an object of redshift {zinput:.2f} is {zdist:.2f} Megaparsecs.")
+if __name__ == "__main__":
+    main()
+
+
