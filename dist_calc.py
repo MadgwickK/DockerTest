@@ -45,16 +45,7 @@ def distcalc(z,omega_m=0.28,omega_lambda=0.72,omega_k=0,H0 = 75e3):
 
     return DM
 
-dummyinput = False
-while dummyinput == False:
-    zinput = input("Enter a value of z to calculate the distance: ")
-    if zinput.isnumeric() == True:
-        zinput = float(zinput)
-        dummyinput = True
-        break
-    else:
-        print("Invalid datatype for z. Please enter an integer or float")
-
+zinput = 2.5
 zdist = distcalc(zinput)
 
 print(f"The distance to an object of redshift {zinput:.2f} is {zdist:.2f} Megaparsecs.")
