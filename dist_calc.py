@@ -49,4 +49,4 @@ zinput = np.linspace(0.5,5,10)
 for zval in zinput:
     
     zdist = distcalc(zval)
-    print(f"The distance to an object of redshift {zval:.1f} is {zdist:.2f} Megaparsecs.")
+    print(f"The distance to an object of redshift {zval:.2f} is {zdist:.2f} Megaparsecs.")
